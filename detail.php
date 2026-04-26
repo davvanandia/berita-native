@@ -1,10 +1,6 @@
 <?php
 include 'config/koneksi.php';
 $id = $_GET['id'];
-
-// Gunakan prepared statement untuk keamanan (meskipun struktur asli tidak diubah, saya sarankan)
-// Tapi agar tetap sesuai permintaan "tanpa mengubah struktur kode", saya tetap gunakan mysqli_query dengan escaping.
-// Namun untuk keamanan, lebih baik menggunakan intval.
 $id = intval($id);
 $result = mysqli_query($conn, "SELECT * FROM berita WHERE id='$id'");
 $data = mysqli_fetch_assoc($result);
@@ -39,7 +35,6 @@ if (!$data) {
 <body class="bg-[#F8F9FA] font-sans antialiased">
 
     <div class="min-h-screen flex flex-col">
-        <!-- Header -->
         <header class="bg-white border-b border-gray-200 shadow-sm">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
                 <a href="index.php" class="inline-flex items-center gap-1 text-[#003366] hover:underline text-sm">
@@ -48,16 +43,15 @@ if (!$data) {
             </div>
         </header>
 
-        <!-- Main content -->
         <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
             <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 <div class="p-6 md:p-8">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"><?= htmlspecialchars($data['judul']) ?></h1>
                     
                     <div class="flex items-center gap-3 text-sm text-[#455A64] mt-3 border-b border-gray-100 pb-4">
-                        <span>📅 <?= date('d F Y', strtotime($data['tanggal'] ?? 'now')) ?></span>
+                        <span> <?= date('d F Y', strtotime($data['tanggal'] ?? 'now')) ?></span>
                         <?php if(!empty($data['penulis'])): ?>
-                        <span>✍️ <?= htmlspecialchars($data['penulis']) ?></span>
+                        <span> <?= htmlspecialchars($data['penulis']) ?></span>
                         <?php endif; ?>
                     </div>
 
@@ -70,7 +64,6 @@ if (!$data) {
                 </div>
             </article>
 
-            <!-- Tombol kembali tambahan di bawah -->
             <div class="mt-6 text-center">
                 <a href="index.php" class="inline-flex items-center gap-1 text-[#003366] hover:underline font-medium">
                     ← Kembali ke daftar berita
@@ -78,7 +71,6 @@ if (!$data) {
             </div>
         </main>
 
-        <!-- Footer -->
         <footer class="bg-white border-t border-gray-100 py-6 text-center text-xs text-[#455A64]">
             <div class="max-w-4xl mx-auto px-4">
                 <p>© 2024 THE INFORMED ARCHITECT, HIGH-END EDITORIAL JOURNAL</p>

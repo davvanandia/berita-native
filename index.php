@@ -22,7 +22,6 @@
             </div>
         </header>
 
-        <!-- Main content -->
         <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
             <div class="space-y-6">
                 <?php
@@ -38,7 +37,7 @@
                             <a href="detail.php?id=<?= $row['id'] ?>"><?= htmlspecialchars($row['judul']) ?></a>
                         </h2>
                         <div class="text-sm text-[#455A64] mt-1 flex items-center gap-2">
-                            <span>📅 <?= date('d M Y', strtotime($row['tanggal'] ?? 'now')) ?></span>
+                            <span> <?= date('d M Y', strtotime($row['tanggal'] ?? 'now')) ?></span>
                         </div>
                         <p class="text-gray-600 mt-3 leading-relaxed">
                             <?= htmlspecialchars(substr(strip_tags($row['isi']), 0, 150)) ?>...
@@ -54,7 +53,6 @@
             </div>
         </main>
 
-        <!-- Footer -->
         <footer class="bg-white border-t border-gray-100 py-6 text-center text-xs text-[#455A64]">
             <div class="max-w-5xl mx-auto px-4">
                 <p>© 2024 THE INFORMED ARCHITECT, HIGH-END EDITORIAL JOURNAL</p>

@@ -21,7 +21,6 @@ if (!isset($_SESSION['login'])) {
 <body class="bg-[#F8F9FA] font-sans antialiased">
 
     <div class="min-h-screen flex flex-col">
-        <!-- Header -->
         <header class="bg-white border-b border-gray-200 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 <div>
@@ -32,7 +31,6 @@ if (!isset($_SESSION['login'])) {
             </div>
         </header>
 
-        <!-- Main content -->
         <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 <div class="px-6 py-5 border-b border-gray-100 bg-gray-50/30 flex flex-wrap justify-between items-center gap-3">
@@ -82,7 +80,6 @@ if (!isset($_SESSION['login'])) {
             </div>
         </main>
 
-        <!-- Footer -->
         <footer class="bg-white border-t border-gray-100 py-4 text-center text-xs text-[#455A64]">
             © 2024 THE INFORMED ARCHITECT, HIGH-END EDITORIAL JOURNAL
         </footer>

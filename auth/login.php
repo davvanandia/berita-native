@@ -15,10 +15,8 @@
 <body class="bg-[#F8F9FA] font-sans antialiased">
 
     <div class="min-h-screen flex items-center justify-center px-4 py-8">
-        <!-- main card – clean, no images, only Tailwind -->
         <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
 
-            <!-- header section -->
             <div class="px-8 pt-8 pb-4 text-center border-b border-gray-100">
                 <h1 class="text-3xl font-extrabold tracking-tight text-[#003366]">
                     The Informed Architect
@@ -28,20 +26,13 @@
                 </p>
             </div>
 
-            <!-- login content -->
             <div class="px-8 py-6">
                 <div class="mb-5">
                     <h2 class="text-2xl font-bold text-gray-800">Admin Login</h2>
                     <p class="text-sm text-[#455A64] mt-1">Secure access to the curation dashboard.</p>
                 </div>
 
-                <!-- ORIGINAL FORM STRUCTURE PRESERVED:
-                     method="post", action="proses_login.php"
-                     inputs: username (text), password (password)
-                     button submit (Login)
-                     No fields removed or renamed -->
                 <form method="post" action="proses_login.php" class="space-y-5">
-                    <!-- username field with label + placeholder (emoji style as in reference) -->
                     <div>
                         <label for="username" class="block text-xs font-semibold text-[#455A64] uppercase tracking-wide mb-1">Username</label>
                         <input type="text" name="username" id="username" 
@@ -51,7 +42,7 @@
                                       text-gray-800 placeholder-gray-400 transition">
                     </div>
 
-                    <!-- password field with label and placeholder matching reference -->
+
                     <div>
                         <label for="password" class="block text-xs font-semibold text-[#455A64] uppercase tracking-wide mb-1">Password</label>
                         <input type="password" name="password" id="password" 
@@ -61,7 +52,7 @@
                                       text-gray-800 placeholder-gray-400 transition">
                     </div>
 
-                    <!-- submit button (primary color, arrow as in design) -->
+
                     <button type="submit" 
                             class="w-full bg-[#003366] hover:bg-[#002a52] text-white font-semibold py-2.5 px-4 rounded-lg 
                                    flex items-center justify-center gap-2 shadow-sm transition">
@@ -70,7 +61,6 @@
                 </form>
             </div>
 
-            <!-- footer with support & terms + copyright -->
             <div class="px-8 py-5 bg-gray-50 border-t border-gray-100 text-center">
                 <div class="text-xs text-[#455A64] space-x-2">
                     <a href="#" class="hover:text-[#003366] transition">Support</a>
