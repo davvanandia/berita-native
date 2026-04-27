@@ -22,21 +22,21 @@ USE `db_berita`;
 -- Dumping structure for table db_berita.berita
 CREATE TABLE IF NOT EXISTS `berita` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `judul` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `isi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `judul` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `isi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
   `kategori_id` int DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
 -- Dumping structure for table db_berita.kategori
 CREATE TABLE IF NOT EXISTS `kategori` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama_kategori` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nama_kategori` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) DEFAULT '0',
   `password` varchar(255) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- UPDATE users SET password = MD5(password);
 

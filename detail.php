@@ -10,6 +10,8 @@ if (!$data) {
     exit();
 }
 ?>
+
+//halaman detail berita, menampilkan judul, tanggal, penulis, dan isi berita. Jika berita tidak ditemukan, akan diarahkan kembali ke halaman index.php.
 <!DOCTYPE html>
 <html lang="en">
 <head>

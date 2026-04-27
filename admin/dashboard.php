@@ -32,6 +32,8 @@ if (!isset($_SESSION['login'])) {
             </div>
         </header>
 
+        <!-- // Main content area -->
+
         <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 <div class="px-6 py-5 border-b border-gray-100 bg-gray-50/30">

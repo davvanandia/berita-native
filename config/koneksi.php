@@ -1,3 +1,4 @@
+<!-- //konfigurasi koneksi database -->
 <?php
 $conn =  mysqli_connect("localhost","root","","db_berita");
 

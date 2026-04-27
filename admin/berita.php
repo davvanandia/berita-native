@@ -6,6 +6,7 @@ if (!isset($_SESSION['login'])) {
     exit();
 }
 ?>
+<!-- // File: admin/berita.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +31,7 @@ if (!isset($_SESSION['login'])) {
                 <a href="dashboard.php" class="text-sm text-[#003366] hover:underline">← Kembali ke Dashboard</a>
             </div>
         </header>
+        <!-- // Main content area -->
 
         <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
@@ -42,6 +44,8 @@ if (!isset($_SESSION['login'])) {
                         + Tambah Berita
                     </a>
                 </div>
+
+                <!-- // Table of news articles -->
 
                 <div class="overflow-x-auto p-4">
                     <table class="min-w-full divide-y divide-gray-200">

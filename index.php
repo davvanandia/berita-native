@@ -1,4 +1,6 @@
 <?php include 'config/koneksi.php'; ?>
+
+<!-- //halaman semua berita -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

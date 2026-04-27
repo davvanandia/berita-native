@@ -8,6 +8,7 @@ $password = md5($_POST['password']);
 $query = mysqli_query($conn, "SELECT * FROM users WHERE username='$username' AND password='$password'");
 $data = mysqli_fetch_assoc($query);
 
+// cek apakah data ditemukan
 if ($data) {
     $_SESSION['login'] = true;
     header("Location: ../admin/dashboard.php");
